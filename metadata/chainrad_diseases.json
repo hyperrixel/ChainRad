@@ -1,0 +1,58 @@
+{
+	"infiltration": {
+		"name": "Infiltration",
+		"treshold": 0.5060984492301941
+	},
+	"effusion": {
+		"name": "Effusion",
+		"treshold": 0.5009458661079407
+	},
+	"atelectasis": {
+		"name": "Atelectasis",
+		"treshold": 0.418853223323822
+	},
+	"consolidation": {
+		"name": "Consolidation",
+		"treshold": 0.5346682071685791
+	},
+	"mass": {
+		"name": "Mass",
+		"treshold": 0.5349563956260681
+	},
+	"nodule": {
+		"name": "Nodule",
+		"treshold": 0.4901681244373321
+	},
+	"edema": {
+		"name": "Edema",
+		"treshold": 0.487363338470459
+	},
+	"pneumothorax": {
+		"name": "Pneumothorax",
+		"treshold": 0.4711726009845733
+	},
+	"cardiomegaly": {
+		"name": "Cardiomegaly",
+		"treshold": 0.4905454516410827
+	},
+	"emphysema": {
+		"name": "Emphysema",
+		"treshold": 0.4959297478199005
+	},
+	"pleural_thickening": {
+		"name": "Pleural Thickening",
+		"treshold": 0.4881339371204376
+	},
+	"pneumonia": {
+		"name": "Pneumonia",
+		"treshold": 0.5175393223762512
+	},
+	"fibrosis": {
+		"name": "Fibrosis",
+		"treshold": 0.4980833232402801
+	},
+	"hernia": {
+		"name": "Hernia",
+		"treshold": 0.4802510142326355
+	}
+}
