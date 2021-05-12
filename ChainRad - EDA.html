@@ -17482,17 +17482,17 @@ Pleural_Thickening:     14 (  4.58%)
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total length of test dataframe:  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total length of valid dataframe: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">valid_df</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of `positive` cases in train dataframe:     </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">train_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Y&#39;</span><span class="p">)))</span>
+                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">train_df</span><span class="p">[</span><span class="n">train_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">])))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of `non-positive` cases in train dataframe: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">train_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;N&#39;</span><span class="p">)))</span>
+                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">train_df</span><span class="p">[</span><span class="n">train_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">])))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of `positive` cases in test  dataframe:     </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Y&#39;</span><span class="p">)))</span>
+                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">])))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of `non-positive` cases in test dataframe:  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;N&#39;</span><span class="p">)))</span>
+                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">])))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of `positive` cases in valid dataframe:     </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">valid_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Y&#39;</span><span class="p">)))</span>
+                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">valid_df</span><span class="p">[</span><span class="n">valid_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">])))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of `non-positive` cases in valid dataframe: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">valid_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;N&#39;</span><span class="p">)))</span>
+                                                                  <span class="nb">len</span><span class="p">(</span><span class="n">valid_df</span><span class="p">[</span><span class="n">valid_df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">])))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Balanced ratio of `positive` and `non-positive` in train dataframe: </span><span class="si">{}</span><span class="s1">&#39;</span>
           <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">train_ratio</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Balanced ratio of `positive` and `non-positive` in test dataframe:  </span><span class="si">{}</span><span class="s1">&#39;</span>
@@ -17533,12 +17533,12 @@ Atelectasis
 Total length of train dataframe: 2356
 Total length of test dataframe:  1635
 Total length of valid dataframe: 655
-Number of `positive` cases in train dataframe:     2356
-Number of `non-positive` cases in train dataframe: 2356
-Number of `positive` cases in test  dataframe:     1635
-Number of `non-positive` cases in test dataframe:  1635
-Number of `positive` cases in valid dataframe:     655
-Number of `non-positive` cases in valid dataframe: 655
+Number of `positive` cases in train dataframe:     1178
+Number of `non-positive` cases in train dataframe: 1178
+Number of `positive` cases in test  dataframe:     327
+Number of `non-positive` cases in test dataframe:  1308
+Number of `positive` cases in valid dataframe:     131
+Number of `non-positive` cases in valid dataframe: 524
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17549,12 +17549,12 @@ Cardiomegaly
 Total length of train dataframe: 1050
 Total length of test dataframe:  730
 Total length of valid dataframe: 290
-Number of `positive` cases in train dataframe:     1050
-Number of `non-positive` cases in train dataframe: 1050
-Number of `positive` cases in test  dataframe:     730
-Number of `non-positive` cases in test dataframe:  730
-Number of `positive` cases in valid dataframe:     290
-Number of `non-positive` cases in valid dataframe: 290
+Number of `positive` cases in train dataframe:     525
+Number of `non-positive` cases in train dataframe: 525
+Number of `positive` cases in test  dataframe:     146
+Number of `non-positive` cases in test dataframe:  584
+Number of `positive` cases in valid dataframe:     58
+Number of `non-positive` cases in valid dataframe: 232
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17565,12 +17565,12 @@ Consolidation
 Total length of train dataframe: 548
 Total length of test dataframe:  380
 Total length of valid dataframe: 155
-Number of `positive` cases in train dataframe:     548
-Number of `non-positive` cases in train dataframe: 548
-Number of `positive` cases in test  dataframe:     380
-Number of `non-positive` cases in test dataframe:  380
-Number of `positive` cases in valid dataframe:     155
-Number of `non-positive` cases in valid dataframe: 155
+Number of `positive` cases in train dataframe:     274
+Number of `non-positive` cases in train dataframe: 274
+Number of `positive` cases in test  dataframe:     76
+Number of `non-positive` cases in test dataframe:  304
+Number of `positive` cases in valid dataframe:     31
+Number of `non-positive` cases in valid dataframe: 124
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17581,12 +17581,12 @@ Edema
 Total length of train dataframe: 104
 Total length of test dataframe:  70
 Total length of valid dataframe: 30
-Number of `positive` cases in train dataframe:     104
-Number of `non-positive` cases in train dataframe: 104
-Number of `positive` cases in test  dataframe:     70
-Number of `non-positive` cases in test dataframe:  70
-Number of `positive` cases in valid dataframe:     30
-Number of `non-positive` cases in valid dataframe: 30
+Number of `positive` cases in train dataframe:     52
+Number of `non-positive` cases in train dataframe: 52
+Number of `positive` cases in test  dataframe:     14
+Number of `non-positive` cases in test dataframe:  56
+Number of `positive` cases in valid dataframe:     6
+Number of `non-positive` cases in valid dataframe: 24
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17597,12 +17597,12 @@ Effusion
 Total length of train dataframe: 1764
 Total length of test dataframe:  1225
 Total length of valid dataframe: 490
-Number of `positive` cases in train dataframe:     1764
-Number of `non-positive` cases in train dataframe: 1764
-Number of `positive` cases in test  dataframe:     1225
-Number of `non-positive` cases in test dataframe:  1225
-Number of `positive` cases in valid dataframe:     490
-Number of `non-positive` cases in valid dataframe: 490
+Number of `positive` cases in train dataframe:     882
+Number of `non-positive` cases in train dataframe: 882
+Number of `positive` cases in test  dataframe:     245
+Number of `non-positive` cases in test dataframe:  980
+Number of `positive` cases in valid dataframe:     98
+Number of `non-positive` cases in valid dataframe: 392
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17613,12 +17613,12 @@ Emphysema
 Total length of train dataframe: 372
 Total length of test dataframe:  260
 Total length of valid dataframe: 105
-Number of `positive` cases in train dataframe:     372
-Number of `non-positive` cases in train dataframe: 372
-Number of `positive` cases in test  dataframe:     260
-Number of `non-positive` cases in test dataframe:  260
-Number of `positive` cases in valid dataframe:     105
-Number of `non-positive` cases in valid dataframe: 105
+Number of `positive` cases in train dataframe:     186
+Number of `non-positive` cases in train dataframe: 186
+Number of `positive` cases in test  dataframe:     52
+Number of `non-positive` cases in test dataframe:  208
+Number of `positive` cases in valid dataframe:     21
+Number of `non-positive` cases in valid dataframe: 84
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17629,12 +17629,12 @@ Fibrosis
 Total length of train dataframe: 810
 Total length of test dataframe:  565
 Total length of valid dataframe: 225
-Number of `positive` cases in train dataframe:     810
-Number of `non-positive` cases in train dataframe: 810
-Number of `positive` cases in test  dataframe:     565
-Number of `non-positive` cases in test dataframe:  565
-Number of `positive` cases in valid dataframe:     225
-Number of `non-positive` cases in valid dataframe: 225
+Number of `positive` cases in train dataframe:     405
+Number of `non-positive` cases in train dataframe: 405
+Number of `positive` cases in test  dataframe:     113
+Number of `non-positive` cases in test dataframe:  452
+Number of `positive` cases in valid dataframe:     45
+Number of `non-positive` cases in valid dataframe: 180
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17645,12 +17645,12 @@ Hernia
 Total length of train dataframe: 118
 Total length of test dataframe:  85
 Total length of valid dataframe: 35
-Number of `positive` cases in train dataframe:     118
-Number of `non-positive` cases in train dataframe: 118
-Number of `positive` cases in test  dataframe:     85
-Number of `non-positive` cases in test dataframe:  85
-Number of `positive` cases in valid dataframe:     35
-Number of `non-positive` cases in valid dataframe: 35
+Number of `positive` cases in train dataframe:     59
+Number of `non-positive` cases in train dataframe: 59
+Number of `positive` cases in test  dataframe:     17
+Number of `non-positive` cases in test dataframe:  68
+Number of `positive` cases in valid dataframe:     7
+Number of `non-positive` cases in valid dataframe: 28
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17661,12 +17661,12 @@ Infiltration
 Total length of train dataframe: 4814
 Total length of test dataframe:  3345
 Total length of valid dataframe: 1340
-Number of `positive` cases in train dataframe:     4814
-Number of `non-positive` cases in train dataframe: 4814
-Number of `positive` cases in test  dataframe:     3345
-Number of `non-positive` cases in test dataframe:  3345
-Number of `positive` cases in valid dataframe:     1340
-Number of `non-positive` cases in valid dataframe: 1340
+Number of `positive` cases in train dataframe:     2407
+Number of `non-positive` cases in train dataframe: 2407
+Number of `positive` cases in test  dataframe:     669
+Number of `non-positive` cases in test dataframe:  2676
+Number of `positive` cases in valid dataframe:     268
+Number of `non-positive` cases in valid dataframe: 1072
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17677,12 +17677,12 @@ Mass
 Total length of train dataframe: 1746
 Total length of test dataframe:  1210
 Total length of valid dataframe: 485
-Number of `positive` cases in train dataframe:     1746
-Number of `non-positive` cases in train dataframe: 1746
-Number of `positive` cases in test  dataframe:     1210
-Number of `non-positive` cases in test dataframe:  1210
-Number of `positive` cases in valid dataframe:     485
-Number of `non-positive` cases in valid dataframe: 485
+Number of `positive` cases in train dataframe:     873
+Number of `non-positive` cases in train dataframe: 873
+Number of `positive` cases in test  dataframe:     242
+Number of `non-positive` cases in test dataframe:  968
+Number of `positive` cases in valid dataframe:     97
+Number of `non-positive` cases in valid dataframe: 388
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17693,12 +17693,12 @@ Nodule
 Total length of train dataframe: 2318
 Total length of test dataframe:  1610
 Total length of valid dataframe: 645
-Number of `positive` cases in train dataframe:     2318
-Number of `non-positive` cases in train dataframe: 2318
-Number of `positive` cases in test  dataframe:     1610
-Number of `non-positive` cases in test dataframe:  1610
-Number of `positive` cases in valid dataframe:     645
-Number of `non-positive` cases in valid dataframe: 645
+Number of `positive` cases in train dataframe:     1159
+Number of `non-positive` cases in train dataframe: 1159
+Number of `positive` cases in test  dataframe:     322
+Number of `non-positive` cases in test dataframe:  1288
+Number of `positive` cases in valid dataframe:     129
+Number of `non-positive` cases in valid dataframe: 516
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17709,12 +17709,12 @@ Pleural_Thickening
 Total length of train dataframe: 1048
 Total length of test dataframe:  730
 Total length of valid dataframe: 290
-Number of `positive` cases in train dataframe:     1048
-Number of `non-positive` cases in train dataframe: 1048
-Number of `positive` cases in test  dataframe:     730
-Number of `non-positive` cases in test dataframe:  730
-Number of `positive` cases in valid dataframe:     290
-Number of `non-positive` cases in valid dataframe: 290
+Number of `positive` cases in train dataframe:     524
+Number of `non-positive` cases in train dataframe: 524
+Number of `positive` cases in test  dataframe:     146
+Number of `non-positive` cases in test dataframe:  584
+Number of `positive` cases in valid dataframe:     58
+Number of `non-positive` cases in valid dataframe: 232
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17725,12 +17725,12 @@ Pneumonia
 Total length of train dataframe: 208
 Total length of test dataframe:  145
 Total length of valid dataframe: 60
-Number of `positive` cases in train dataframe:     208
-Number of `non-positive` cases in train dataframe: 208
-Number of `positive` cases in test  dataframe:     145
-Number of `non-positive` cases in test dataframe:  145
-Number of `positive` cases in valid dataframe:     60
-Number of `non-positive` cases in valid dataframe: 60
+Number of `positive` cases in train dataframe:     104
+Number of `non-positive` cases in train dataframe: 104
+Number of `positive` cases in test  dataframe:     29
+Number of `non-positive` cases in test dataframe:  116
+Number of `positive` cases in valid dataframe:     12
+Number of `non-positive` cases in valid dataframe: 48
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
@@ -17741,12 +17741,12 @@ Pneumothorax
 Total length of train dataframe: 354
 Total length of test dataframe:  245
 Total length of valid dataframe: 100
-Number of `positive` cases in train dataframe:     354
-Number of `non-positive` cases in train dataframe: 354
-Number of `positive` cases in test  dataframe:     245
-Number of `non-positive` cases in test dataframe:  245
-Number of `positive` cases in valid dataframe:     100
-Number of `non-positive` cases in valid dataframe: 100
+Number of `positive` cases in train dataframe:     177
+Number of `non-positive` cases in train dataframe: 177
+Number of `positive` cases in test  dataframe:     49
+Number of `non-positive` cases in test dataframe:  196
+Number of `positive` cases in valid dataframe:     20
+Number of `non-positive` cases in valid dataframe: 80
 Balanced ratio of `positive` and `non-positive` in train dataframe: 0.5
 Balanced ratio of `positive` and `non-positive` in test dataframe:  0.2
 Balanced ratio of `positive` and `non-positive` in valid dataframe: 0.2
