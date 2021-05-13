@@ -1,3 +1,10 @@
+[![badge - built with](https://img.shields.io/badge/built_with-PyTorch-ee4c2c.svg)](https://shields.io/)
+[![badge - code grade](https://img.shields.io/badge/pylint-10.0_of_10.0-a0ff00.svg)](https://shields.io/)
+
+[Project presentation video](https://www.youtube.com/watch?v=m0CUExITjxE)
+
+[Model state dict files about 3.5 GByte (content of ` models ` directory)](http://www.mediafire.com/file/sl6qqfkkmcjz51u/models.zip)
+
 # Inspiration
 
 Healthcare system is usually on the bottom section of any government’s budget. Hospitals struggle from underfunding. Doctors, especially radiologists are overwhelmed. The COVID-19 pandemic gives a lot of extra pressure on the healthcare system and on hospitals’ staff as well. We want to create a solution that helps to handle the available resources especially human resources and work time better. We know, everybody can train a deep learning model. That’s why we bring this hackathon an idea that is not a “yet another solution” 
@@ -26,12 +33,12 @@ A final software assists radiologists by giving the possibilities of trained dis
 
 
 # Accomplishments that we're proud of
--  working demo with UI
+- working demo with UI
 - EDA
 - unit test for data preparation
 - 14 trained models
 - validation plan
 
-#What's next for ChainRad
+# What's next for ChainRad
 
 We are thinking this state of ChainRad is rather a proof of concept than a production ready software though it has significant performance at the moment as well. In case if ChainRad would have a chance to get developed further, we would re-train the famous computer vision architectures from zero to get more healthcare-compatible  networks.
